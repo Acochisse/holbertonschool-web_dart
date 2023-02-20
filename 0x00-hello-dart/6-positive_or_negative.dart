@@ -1,3 +1,5 @@
+import 'dart:core';
+
 void main(List<String> args) {
   var number = int.parse(args[0]);
     if (num == 0) {
