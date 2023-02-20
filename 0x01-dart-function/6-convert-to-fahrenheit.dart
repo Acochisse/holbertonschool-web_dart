@@ -4,7 +4,7 @@
 List<double> convertToF(List<double> temperaturesInC) {
     List<double> temperatures = new ArrayList<>();
     for (double temp : temperaturesInC) {
-        temperatures.add((temp * 9 / 5).toStringFixed(2) + 32);
+        temperatures.toStringFixed(2).add((temp * 9 / 5) + 32);
     }
     return temperatures;
 }
