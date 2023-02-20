@@ -16,6 +16,6 @@ int sub(int a, int b) {
 }
 
 String showFunc(int a, int b) {
-  String str = "Add: ${add(a, b)}\nSub: ${sub(a, b)}";
+  String str = "Add ${a} + ${b} = ${add(a, b)}\nSub ${a} - ${b} = ${sub(a, b)}";
   return str;
 }
