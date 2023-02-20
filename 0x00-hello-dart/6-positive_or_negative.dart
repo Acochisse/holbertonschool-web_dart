@@ -1,15 +1,10 @@
 void main(List<String> args) {
   var number = int.parse(args[0]);
-    if (number == 0) {
-        print('${number} is zero');
-        return;
-    }
-    if (number => 1) {
-        print('${number} is positive');
-        return;
-    }
-    if (number < 0) {
-        print('${number} is negative');
-        return;
-    }
+    if (num == 0) {
+    print("The number is zero.");
+  } else if (num > 0) {
+    print("The number is positive.");
+  } else {
+    print("The number is negative.");
+  }
 }
