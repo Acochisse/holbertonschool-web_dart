@@ -2,8 +2,8 @@
 List<double> convertToF(List<double> temperaturesInC) {
     List<double> temperaturesInF = [];
     for (double temp in temperaturesInC) {
-        temperaturesInF.add((temp * 9 / 5) + 32);
+        temperaturesInF.add((temp * 9 / 5) + 32).toStringFixed(2);
+
     }
     return temperaturesInF;
     }
-    
