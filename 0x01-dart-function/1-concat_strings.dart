@@ -3,5 +3,5 @@
 // Function prototype : String concatStr(String str1, String str2)
 
 String concatStr(String str1, String str2) {
-    str1.concat(str2);
+    return str1 + ' ' + str2;
 }
