@@ -12,5 +12,5 @@ class User {
 
   Map toJson() {
     return '{ "name": "$name", "age": $age, "height": $height }';
-  };
-}
+  }
+  }
