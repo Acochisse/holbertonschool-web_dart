@@ -4,10 +4,13 @@
 // and a method called showName that return string representation of User “Hello name”
 class User {
   String name = '';
-  Int age = 0;
-  Double height = 0.0;
+  int age = 0;
+  double height = 0.0;
 
-  String toJson() {
+  User({required this.name, required this.age, required this.height});
+
+
+  Map toJson() {
     return '{ "name": "$name", "age": $age, "height": $height }';
-  }
+  };
 }
