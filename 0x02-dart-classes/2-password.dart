@@ -10,23 +10,25 @@
 // Override the toString method of Password class to prints Your Password is: ShouldWorkf7ne.
 
 class Password {
-  constructor(password) {
-    this.password = password;
+    String password = '';
+    
+    bool isValid() {
+        return password.length >= 8 &&
+            password.length <= 16 &&
+            password.contains(RegExp(r'[A-Z]')) &&
+            password.contains(RegExp(r'[a-z]')) &&
+            password.contains(RegExp(r'[0-9]'));
     }
-    isValid() {
-        if (this.password.length >= 8 && this.password.length <= 16) {
-            if (this.password.match(/[a-z]/g) && this.password.match(/[A-Z]/g) && this.password.match(/[0-9]/g)) {
-            return true;
-            }
-        }
-        return false;
-        }
-    toString() {
-        return `Your Password is: ${this.password}`;
-        }
+    
+    @override
+    String toString() {
+        return 'Your Password is: $password';
     }
-    const password = new Password("ShouldWorkf7ne");
-    password.isValid();
-    console.log(password.isValid());
-    console.log(password.toString());
+    }
+
+void main() {
+    Password password = new Password();
+    if (password.isValid()) {
+        print(password);
+    }
 }
