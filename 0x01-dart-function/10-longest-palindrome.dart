@@ -18,7 +18,7 @@ String longestPalindrome(String s) {
       }
     }
   }
-    if (longest == '') {
+    if (longest.length < 3) {
         return 'none';
     } else {
         return longest;
