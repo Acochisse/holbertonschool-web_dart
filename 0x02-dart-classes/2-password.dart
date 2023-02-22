@@ -26,9 +26,3 @@ class Password {
     }
     }
 
-void main() {
-    Password password = new Password();
-    if (password.isValid()) {
-        print(password);
-    }
-}
