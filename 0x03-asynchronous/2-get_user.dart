@@ -7,7 +7,7 @@
 // Gets the user data by calling the provided function fetchUserData()
 
 // Must use : try-catch If an error occurs the function should print “error caught: ”
-import '0-main.dart';
+import '1-main.dart';
 import 'dart:convert';
 Future<void> getUser() async {
   try {
