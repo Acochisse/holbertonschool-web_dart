@@ -17,12 +17,12 @@ String longestPalindrome(String s) {
       
       }
     }
-  }
     if (longest.length < 3) {
         return 'none';
     } else {
         return longest;
     }
+}
 
 bool isPalindrome(String s) {
     return s == s.split('').reversed.join('') && s.length > 2;
