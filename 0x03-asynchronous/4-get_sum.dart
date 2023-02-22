@@ -12,20 +12,12 @@
 import 'dart:convert';
 
 Future<double> calculateTotal() async {
-    return new Future<double>(async (resolve, reject) => {
-        try {
-            const user = await fetchUser();
-            const orders = await fetchUserOrders(user.id);
-            const product = await fetchProductPrice(user.products[0]);
-            resolve(product * orders);
-            return;
-
-        } catch (error) {
-            reject(error);
-            return;
-        }
-        }
+    var user = await fetchUserData();
+    var orders = await fetchUserOrders(user.id);
+    var product = await fetchProductPrice(orders[0].product);
+    return product.price;
 }
+
 
 Future<String> fetchUserOrders(String id) async {
   var orders = {
