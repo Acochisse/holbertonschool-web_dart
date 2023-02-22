@@ -17,7 +17,7 @@ Future<double> calculateTotal() async {
 
         final Map<String, dynamic> userData = json.decode(await functionfetchUserData());
         final String userD = userData['id'];
-        final list<dynamic> userOrders = json.decode(await functionfetchUserOrders(userD));
+        final List<dynamic> userOrders = json.decode(await functionfetchUserOrders(userD));
         for (int i = 0; i < userOrders.length; i++) {
             total = json.decode(await functionfetchProductPrice(userOrders[i]));
         }
