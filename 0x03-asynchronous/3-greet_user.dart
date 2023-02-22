@@ -15,7 +15,7 @@
 // If checkCredentials() returns true loginUser() should call greetUser() and return it’s value
 // If checkCredentials() returns false loginUser() should return “Wrong credentials”
 // Must use try-catch If an error occurs the function should return “error caught: ”
-
+import 'dart:convert';
 Future<String> greetUser() async {
   final String userData = await fetchUserData();
   final Map<String, dynamic> user = jsonDecode(userData);
