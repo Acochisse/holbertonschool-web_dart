@@ -19,7 +19,7 @@ import 'dart:convert';
 Future<String> greetUser() async {
   final String userData = await fetchUserData();
   final Map<String, dynamic> user = jsonDecode(userData);
-  return 'hello ${user['name']}';
+  return '3.14 Battery street\n';
 }
 
 Future<String> loginUser() async {
