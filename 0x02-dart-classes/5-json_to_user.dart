@@ -8,7 +8,7 @@ class User {
   double height = 0.0;
   int id = 0;
 
-  User({required this.id, required this.name, required this.age, required this.height});
+  User({required this.name, required this.age, required this.height});
 
  Map toJson() {
     return {
