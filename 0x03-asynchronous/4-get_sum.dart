@@ -24,6 +24,8 @@ Future<double> calculateTotal() async {
             reject(error);
             return;
         }
+        }
+}
 
 Future<String> fetchUserOrders(String id) async {
   var orders = {
