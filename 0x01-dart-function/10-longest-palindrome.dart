@@ -19,7 +19,7 @@ String longestPalindrome(String s) {
     }
   }
     if (longest == '') {
-        return none;
+        return 'none';
     } else {
         return longest;
     }
