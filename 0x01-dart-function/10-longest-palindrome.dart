@@ -20,9 +20,9 @@ String longestPalindrome(String s) {
   }
     if (longest == '') {
         return none;
-
-    return longest;
-}
+    } else {
+        return longest;
+    }
 
 bool isPalindrome(String s) {
     return s == s.split('').reversed.join('') && s.length > 2;
