@@ -49,7 +49,7 @@ Future<String> fetchUserData() => Future.delayed(
     );
 
 Future<String> fetchProductPrice(product) async {
-  var products = {"pizza": 20.30, "orange": 10, "water": 5, "soda": 8.5};
+  var products = {"pizza": 20.30, "orange": 10.0, "water": 5, "soda": 8.5};
   try {
     return Future.delayed(
         const Duration(seconds: 2), () => json.encode(products[product]));
