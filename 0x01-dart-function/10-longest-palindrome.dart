@@ -14,8 +14,12 @@ String longestPalindrome(String s) {
       if (current.length > longest.length && isPalindrome(current)) {
         longest = current;
       }
+      
+      }
     }
   }
+    if (longest == '') {
+        return none;
 
     return longest;
 }
