@@ -11,7 +11,7 @@
 import 'dart:convert';
 Future<void> getUser() async {
   try {
-    final String userData = await fetchUserData();
+    final String userData = await fetchUser();
     final Map<String, dynamic> user = jsonDecode(userData);
     print(user);
   } catch (e) {
@@ -19,8 +19,10 @@ Future<void> getUser() async {
   }
 }
 
-Future<String> fetchUserData() => Future.delayed(
+Future<String> fetchUser() =>
+    // Imagine that this function is
+    // more complex and slow.
+    Future.delayed(
       const Duration(seconds: 2),
-      () =>
-          '{"id" : "7ee9a243-01ca-47c9-aa14-0149789764c3", "username" : "admin"}',
+      () => throw 'Cannot locate user',
     );
