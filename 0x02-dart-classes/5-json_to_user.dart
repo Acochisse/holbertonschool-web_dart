@@ -18,6 +18,7 @@ class User {
 
   static User fromJson(Map json) {
     return User(
+      id: json['id'],
       name: json['name'],
       age: json['age'],
       height: json['height'],
